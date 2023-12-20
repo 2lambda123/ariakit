@@ -1,5 +1,21 @@
 # @ariakit/react
 
+## 0.3.11
+
+### Modal Combobox
+
+The [Combobox](https://ariakit.org/component/combobox) components now support the [`modal`](https://ariakit.org/reference/combobox-popover#modal) prop on [`ComboboxPopover`](https://ariakit.org/reference/combobox-popover).
+
+When a modal combobox is expanded, users can interact with and tab through all the combobox controls, including [`Combobox`](https://ariakit.org/reference/combobox), [`ComboboxDisclosure`](https://ariakit.org/reference/combobox-disclosure), and [`ComboboxCancel`](https://ariakit.org/reference/combobox-cancel), even if they're rendered outside the popover. The rest of the page will be inert.
+
+### Other updates
+
+- Fixed [`useTabStore`](https://ariakit.org/reference/use-tab-store) return value not updating its own reference.
+- Fixed keyboard navigation on [Combobox](https://ariakit.org/components/combobox) when the content element is a grid.
+- Fixed [`ComboboxDisclosure`](https://ariakit.org/reference/combobox-disclosure) to update its `aria-expanded` attribute when the combobox expands.
+- Improved JSDocs.
+- Updated dependencies: `@ariakit/react-core@0.3.11`
+
 ## 0.3.10
 
 ### Overwriting `aria-selected` value on `ComboboxItem`
